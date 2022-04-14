@@ -1,0 +1,82 @@
+<div class="div">
+    <div style="margin-top: 30px;"  id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+  <div class="carousel-inner">
+    <div id="carousel" class="carousel-item active">
+      <img id="img" src="{{products[2].image}}" class="d-block" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 id="des">{{products[2].title}}</h5>
+        <p id="de" >{{products[2].description}}</p>
+      </div>
+    </div>
+    <div id="carousel" class="carousel-item">
+      <img id="img" src="{{products[7].image}}" class="d-block" alt="..."> 
+      <div class="carousel-caption d-none d-md-block">
+        <h5 id="des">{{products[7].title}}</h5>
+        <p id="de">{{products[7].description}}</p>
+      </div>
+    </div>
+    <div id="carousel" class="carousel-item">
+      <img id="img" src="{{products[14].image}}" class="d-block" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 id="des">{{products[14].title}}</h5>
+        <p id="de">{{products[14].description}}</p>
+      </div>
+    </div>
+    <div id="carousel" class="carousel-item">
+      <img id="img" src="{{products[16].image}}" class="d-block" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 id="des">{{products[16].title}}</h5>
+        <p id="de">{{products[16].description}}</p>
+      </div>
+    </div>
+    <div id="carousel" class="carousel-item">
+      <img id="img" src="{{products[18].image}}" class="d-block" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 id="des">{{products[18].title}}</h5>
+        <p id="de">{{products[18].description}}</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    <h1>PRODUCTS</h1>
+    <table class="tab">
+        <tr id="colhed">
+            <th></th>
+            <th>name</th>
+            <th>product details</th>
+            <th>price</th>
+            <th>rating</th>
+            
+        </tr>
+        <tr class="tr" *ngFor="let i of products">
+            <td><img data-aos="flip-left"  data-aos-duration="2300" style="height: 100px;width: auto;" [src]="i.image" alt=""></td>
+            <td>{{i.title}}</td>
+            <td>{{i.description}}</td>
+            <td>{{i.price}}</td>
+            <td>{{i.rating.rate}}</td>
+        </tr>
+    </table>
+   
+</div>
+<br><br>
+<div style="display: flex; margin-left: 35%;" >
+    <a target="_blank" href="https://www.facebook.com/campaign/landing.php?campaign_id=16115752481&extra_1=s%7Cc%7C580541349720%7Ce%7Cfacebook%7C&placement=&creative=580541349720&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D16115752481%26adgroupid%3D130343387942%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-1001394929%26loc_physical_ms%3D1007777%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMIisqmu4OT9wIVS5NmAh2Fqg8OEAAYASAAEgIOpPD_BwE"><img style="height: 100px; width: auto; padding: 15px;" src="../../assets/images/face.jpg" alt=""></a>
+    <a target="_blank" href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><img style="height: 100px; width: auto; padding: 15px;" src="../../assets/images/twit.jpg" alt=""></a>
+    <a target="_blank" href="https://www.instagram.com/?hl=en"><img style="height: 100px; width: auto; padding: 15px;" src="../../assets/images/inst.jpg" alt=""></a>
+    
+</div>

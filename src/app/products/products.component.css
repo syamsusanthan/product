@@ -1,0 +1,44 @@
+.div .tab{
+    width: 95%;
+    text-align: center;
+}
+h1{
+    margin-left: 45px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: rgb(5, 121, 156);
+    font-weight: bolder;
+    font-family:'Times New Roman', Times, serif;
+}
+td{
+    padding: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#carousel{
+    height: 240px;
+    background-color: rgb(64, 247, 210);
+    padding: 20px;
+}
+img{
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+#des{
+    color: blue;
+}
+#de{
+    color: black;
+}
+#colhed{
+    color: rgb(19, 158, 165);
+}
+#foot{
+    text-align: center;
+}
+#footimg{
+    height: 15px;
+    width: auto;
+}
