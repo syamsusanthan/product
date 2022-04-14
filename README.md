@@ -1,6 +1,11 @@
 # Products
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
+## Installing and running locally
+
+Clone the code using gitbash or Download the zip file.
+Install node modules using command "npm install" in the terminal.
+Run the code using "ng serve --open".
 
 ## Development server
 
